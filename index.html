@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="style.css" rel="stylesheet" />
+   <title>The Ultimate Javascript Flash Quiz</title>
+ </head>
+
+<body>
+  <header id="start-container"> <!--#start-container-->
+    <h1>Javascript Fundamentals Quiz</h1>
+    <p>Click this button to begin the quiz! </p>
+    <button id="start-button"> Start Quiz </button> <!--#start-button-->
+  </header>
+
+  <div id="quiz-container" style="display: none;"> <!--#quiz-container-->
+    <div id="question-container"> <!--#question-container-->
+      <h2> Question <span id="question-number"></span></h2> <!--#question-number-->
+      <p id="question-text"></p> <!--#question-text-->
+      <ul id="answer-choices"></ul> <!--#answer-choices-->
+    </div>
+
+    <div id="score-container" style="display: none;"> <!--#score-container-->
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span></p> <!--#final-score-->
+      <form>
+        <label for="initials">Enter initials:</label>
+        <input type="text" id="initials" name="initials"> <!--#initials-->
+        <button type="submit" id="submit-button">Submit</button> <!--#submit-button-->
+      </form>
+    </div>
+
+    <div id="timer-container"> <!--#timer-container-->
+      Seconds Remaining: <span id="seconds-remaining"></span> <!---#seconds-remaining-->
+    </div>
+
+    <div id="scoreboard"> <!--#scoreboard-->
+      Your Score: <span id="score">0</span> <!--#score-->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
